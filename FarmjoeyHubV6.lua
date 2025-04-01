@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-    Name = "Farmjoey Hub V6",
+    Name = "Farmjoey Hub V5",
     LoadingTitle = "Farmjoey Hub",
     LoadingSubtitle = "by Farmjoey"
 })
@@ -116,6 +116,15 @@ local NameInput2 = ObjectsTab:CreateInput({
     Flag = "NameFlag2",
     Callback = function(Text)
         setclipboard('require(139666139485072).load("' .. Text .. '")')
+    end
+})
+
+local NameInput3 = ObjectsTab:CreateInput({
+    Name = "Map2",
+    PlaceholderText = "Enter name",
+    Flag = "NameFlag3",
+    Callback = function(Text)
+        setclipboard('require(5702244094).space("' .. Text .. '")')
     end
 })
 
