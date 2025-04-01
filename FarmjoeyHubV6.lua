@@ -128,6 +128,33 @@ local NameInput3 = ObjectsTab:CreateInput({
     end
 })
 
+local NameInput4 = ObjectsTab:CreateInput({
+    Name = "Map3",
+    PlaceholderText = "Enter name",
+    Flag = "NameFlag4",
+    Callback = function(Text)
+        setclipboard('require(115545395702367).Baseplate("' .. Text .. '")')
+    end
+})
+
+local NameInput5 = ObjectsTab:CreateInput({
+    Name = "Map4",
+    PlaceholderText = "Enter name",
+    Flag = "NameFlag5",
+    Callback = function(Text)
+        setclipboard('require(103534547179421).map("' .. Text .. '")')
+    end
+})
+
+local NameInput6 = ObjectsTab:CreateInput({
+    Name = "Map5",
+    PlaceholderText = "Enter name",
+    Flag = "NameFlag6",
+    Callback = function(Text)
+        setclipboard('require(3400876685).lol("' .. Text .. '")')
+    end
+})
+
 local BackdoorScannerButton = ObjectsTab:CreateButton({
     Name = "Backdoor Scanner",
     Callback = function()
